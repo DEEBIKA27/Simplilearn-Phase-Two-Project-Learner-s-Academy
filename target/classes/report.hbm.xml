@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+	<class name="com.simplilearn.entity.ClassReport" table="report">
+	<id name="serNo" type="int" column="serNo" >
+			<generator class ="increment"></generator>
+		</id> 
+		<property name="section" type="string" column="section"></property>
+		<property name="studentName" type="string" column="studentName"></property>
+		<property name="teacherName" type="string" column="teacherName"></property>
+		<property name="subjectName" type="string" column="subjectName"></property>
+	</class>
+</hibernate-mapping>
